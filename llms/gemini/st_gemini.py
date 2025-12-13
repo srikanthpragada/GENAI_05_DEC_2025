@@ -10,5 +10,5 @@ st.title("Get Answers from Gemini!")
 prompt = st.text_input("Enter your prompt", "")
 if len(prompt) > 0:
     response = model.invoke(prompt)
-    st.write(response.content, unsafe_allow_html=True )
+    st.write(response.content, unsafe_allow_html=True)
      

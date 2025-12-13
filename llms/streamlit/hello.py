@@ -1,3 +1,5 @@
+# run it using  -> streamlit run hello.py
+
 import streamlit as st
 
 st.title("Demo")
