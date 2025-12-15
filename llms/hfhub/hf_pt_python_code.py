@@ -2,7 +2,8 @@ from huggingface_hub import InferenceClient
 from langchain_core.prompts import PromptTemplate
 import keys
 
-model_id = "mistralai/Mistral-7B-Instruct-v0.3"   
+#model_id = "mistralai/Mistral-7B-Instruct-v0.3"   
+model_id = "openai/gpt-oss-120b"
 client = InferenceClient(model=model_id, 
                          token= keys.HUGGINGFACE_KEY)
 

@@ -6,7 +6,7 @@
 from openai import OpenAI
 
 client = OpenAI()
-#client  = OpenAI(api_key = "...")
+#client  = OpenAI(api_key = " ")
 
 response = client.responses.create(
     model="gpt-4o-mini",
