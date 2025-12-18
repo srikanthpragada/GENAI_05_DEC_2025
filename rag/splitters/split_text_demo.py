@@ -12,7 +12,7 @@ print("First Document Size : ", len(docs[0].page_content))
 
 text_splitter = RecursiveCharacterTextSplitter(
       chunk_size=500,
-      chunk_overlap=200)
+      chunk_overlap=100)
 
 chunks = text_splitter.split_text(docs[0].page_content)
 

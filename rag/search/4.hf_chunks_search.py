@@ -9,8 +9,8 @@ print("Loaded documents", len(docs))
 
 # Split docs into chunks 
 splitter = RecursiveCharacterTextSplitter(
-    chunk_size=200, 
-    chunk_overlap=20)
+    chunk_size=500, 
+    chunk_overlap=50)
 
 chunks = splitter.split_documents(docs)
 print("No. of chunks :", len(chunks))

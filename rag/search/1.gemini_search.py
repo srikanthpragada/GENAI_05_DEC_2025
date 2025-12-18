@@ -9,13 +9,14 @@ docs = [
     Document(page_content="AI is transforming the world."),
     Document(page_content="Machine learning enables data-driven predictions."),
     Document(page_content="Deep learning uses neural networks."),
-    Document(page_content="AWS is super"),
+    Document(page_content="AWS is cloud platform"),
+    Document(page_content="Deep Learning is used in Generative AI"),
 ]
 
 vectorstore = FAISS.from_documents(docs, embeddings_model)
 
 query = "What uses neural networks?"
-results = vectorstore.similarity_search(query, k=2)
+results = vectorstore.similarity_search(query, k=3)
 
 
 for i, doc in enumerate(results, start=1):

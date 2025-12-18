@@ -4,7 +4,6 @@ from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document
 import os 
 
-
 embeddings_model = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001")
 
 docs = [
