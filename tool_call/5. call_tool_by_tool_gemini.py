@@ -17,7 +17,7 @@ def get_weather(latitude, longitude):
 
 
 @tool
-def get_coordinates(city_name):
+def get_coordinates(city_name : str) -> dict:
     """Return latitude & longitude for a city"""
     url = f"https://geocoding-api.open-meteo.com/v1/search?name={city_name}"
     response = requests.get(url)
