@@ -7,7 +7,7 @@ import json
 
 
 @tool
-def get_weather(latitude, longitude):
+def get_weather(latitude : float, longitude : float) -> dict:
     """function to return weather information based on latitude and longitude"""
 
     """This is a publically available API that returns the weather for a given location."""
